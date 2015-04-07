@@ -1,5 +1,5 @@
 Name:           cloudwebfrontend
-Version:        1.2 
+Version:        1.2
 Release:        1%{?dist}
 Summary:        The cloud web front end 
 License:        GPLv2
@@ -21,12 +21,12 @@ echo "Build"
 
 %install
 echo "Install"
-rm -rf 
-install -d /var/www/
-cp -Ra frontend /var/www/
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT/var/www/frontend/
+cp -Ra . $RPM_BUILD_ROOT/var/www/frontend/
 
 %clean
-rm -rf 
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,cloud,cloud,)
