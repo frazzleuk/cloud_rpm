@@ -5,7 +5,7 @@ Summary:        The cloud web front end
 License:        GPLv2
 Source0:        cloudwebfrontend.tar.gz   
 BuildArch:      noarch
-Requires:       python-cherrypy = 3.2.2, python-ldap = 2.3.10, python-jinja2 = 2.2.1, python-websockify = 0.5.1, numpy = 1.4.1, words
+Requires:       python-cherrypy >= 3.2.2, python-ldap >= 2.3.10, python-jinja2 >= 2.2.1, python-websockify >= 0.5.1, numpy >= 1.4.1, words
 Requires(pre):  /usr/sbin/useradd, /usr/bin/getent
 Requires(postun): /usr/sbin/userdel
 
